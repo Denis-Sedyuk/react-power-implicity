@@ -24,7 +24,9 @@ export const Navbar = () => {
           </a>
         </li>
       </ul>
-      <button className="nav__button">Download for free</button>
+      <button type="button" className="nav__button">
+        Download for free
+      </button>
     </nav>
   );
 };

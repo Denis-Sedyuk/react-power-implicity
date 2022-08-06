@@ -10,14 +10,26 @@ export const Slider = () => {
           Instead of spending time searching for the right app, our AI will
           bring the right app to you.
         </p>
-        <button className="slider__button">Learn</button>
-        <div className="slider__dots">
-          <Dot className="slider__dot" />
-          <Dot className="slider__dot" />
-          <DotActive className="slider__dot slider__dot--active" />
-          <Dot className="slider__dot" />
-          <Dot className="slider__dot" />
-        </div>
+        <button type="button" className="slider__button">
+          <span className="slider__button-text">Learn</span>
+        </button>
+        <ul className="slider__dots">
+          <li className="slider__dot">
+            <Dot />
+          </li>
+          <li className="slider__dot">
+            <Dot />
+          </li>
+          <li className="slider__dot slider__dot--active">
+            <DotActive />
+          </li>
+          <li className="slider__dot">
+            <Dot />
+          </li>
+          <li className="slider__dot">
+            <Dot />
+          </li>
+        </ul>
       </div>
     </div>
   );

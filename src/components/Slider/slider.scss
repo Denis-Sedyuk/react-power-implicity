@@ -49,22 +49,29 @@
 
   &__button {
     padding: 16px 96px;
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 21px;
-    color: transparent;
-    background: linear-gradient(to right, #fc4060 0%, #8061fd 100%);
-    background-clip: text;
-    border: 2px solid transparent;
-    border-image: linear-gradient(to right, #fc4060 0%, #8061fd 100%);
-    border-image-slice: 1;
+    background-image: url(../../assets/button.svg);
+    border: none;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-color: transparent;
 
     @include mobile {
       padding: 10px 48px;
     }
   }
 
+  &__button-text {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    background: linear-gradient(to right, #fc4060 0%, #8061fd 100%);
+    color: transparent;
+    background-clip: text;
+  }
+
   &__dots {
+    display: flex;
+    list-style-type: none;
     margin-bottom: 229px;
     max-width: 240px;
     margin-top: 64px;
